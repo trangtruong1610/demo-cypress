@@ -28,12 +28,13 @@
 Cypress.Commands.add('loginToApplication', (email, password) => {
     cy.request({
         method: 'POST',
-        url: 'http://localhost:3000/api/users/login',
-        body: {"user":{"email":email,"password":password}}
+        url: 'https://restful-booker.herokuapp.com/auth',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: {"username":email,"password":password}
       }).then(Response => {
-
         expect(Response.status).to.equal(200)
-
-        Cypress.env('token', Response.body.user.token)
+        Cypress.env('token', Response.body.token)
       })
 })
