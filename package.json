@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/trangtruong1610/demo-cypress#readme",
   "devDependencies": {
+    "cypress": "^10.10.0",
     "node": "^19.0.0"
   }
 }
