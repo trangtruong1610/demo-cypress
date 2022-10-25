@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/trangtruong1610/demo-cypress/issues"
   },
-  "homepage": "https://github.com/trangtruong1610/demo-cypress#readme"
+  "homepage": "https://github.com/trangtruong1610/demo-cypress#readme",
+  "devDependencies": {
+    "node": "^19.0.0"
+  }
 }
