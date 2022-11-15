@@ -94,10 +94,5 @@ export class HomePage{
         cy.iframe('.stripe_checkout_app').find('#cc-exp').should('be.visible').type('1125')
         cy.iframe('.stripe_checkout_app').find('#cc-csc').should('be.visible').type('123')
         cy.iframe('.stripe_checkout_app').find('#submitButton').should('be.visible').click()
-
-        // cy.xpath(this.card_number).type('4242424242424242')
-        // cy.xpath(this.card_date).type('1125')
-        // cy.xpath(this.card_csc).type('124')
-        // cy.xpath(this.pay_btn).click()
     }
 }
