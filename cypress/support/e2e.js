@@ -15,10 +15,18 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+require('cypress-xpath')
+require('cypress-iframe');
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
 beforeEach(()=> {
     cy.log('I am before each')
+})
+
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
 })

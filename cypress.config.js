@@ -13,7 +13,8 @@ module.exports = defineConfig({
     "mochaFile": "results/my-test-output.xml",
     "toConsole": true
   },
-  "video": false
+  "video": false,
+  "chromeWebSecurity": false
 },
 
 

@@ -4,7 +4,11 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "echo I am Pretest",
+    "posttest": "echo I am PostTest",
+    "test": "echo I am the test",
+    "hello": "echo Hello World",
+    "cy-test": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,8 @@
   "homepage": "https://github.com/trangtruong1610/demo-cypress#readme",
   "devDependencies": {
     "cypress": "^10.10.0",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^2.0.1",
     "node": "^19.0.0"
   }
 }
