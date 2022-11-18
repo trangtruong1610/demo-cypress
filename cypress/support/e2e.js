@@ -22,7 +22,7 @@ require('cypress-iframe');
 // require('./commands')
 
 beforeEach(()=> {
-    cy.log('I am before each')
+    cy.log('I am inside e2e file')
 })
 
 Cypress.on('uncaught:exception', (err, runnable) => {
